@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalVault | FAQ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #020617; color: #f8fafc; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .active-tab { color: #22d3ee; border-bottom: 2px solid #22d3ee; }
+        .faq-toggle:checked ~ .answer { max-height: 200px; padding: 16px; border-top: 1px solid rgba(255,255,255,0.05); }
+        .answer { max-height: 0; overflow: hidden; transition: all 0.3s ease-out; }
+    </style>
+</head>
+<body class="pb-20">
+    <nav class="glass sticky top-0 z-40 mb-12">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tighter">DIGITAL<span class="text-cyan-400">VAULT</span></h1>
+            <div class="flex gap-6">
+                <a href="shop.html" class="text-xs font-bold text-slate-400">STORE</a>
+                <a href="faq.html" class="text-xs font-bold active-tab pb-1">FAQ</a>
+                <a href="riwayat.html" class="text-xs font-bold text-slate-400">RIWAYAT</a>
+                <a href="about.html" class="text-xs font-bold text-slate-400">ABOUT</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-6 max-w-3xl">
+        <h2 class="text-4xl font-bold mb-10 text-center">Pusat <span class="text-cyan-400">Bantuan</span></h2>
+        <div class="space-y-4">
+            <div class="glass rounded-2xl overflow-hidden">
+                <input type="checkbox" id="q1" class="hidden faq-toggle">
+                <label for="q1" class="p-5 block cursor-pointer font-bold flex justify-between">Apakah ini resmi? <span class="text-cyan-400">▼</span></label>
+                <div class="answer text-sm text-slate-400">Ya, dikelola langsung oleh tim IT Mahasiswa UNIDA Gontor secara profesional.</div>
+            </div>
+            <div class="glass rounded-2xl overflow-hidden">
+                <input type="checkbox" id="q2" class="hidden faq-toggle">
+                <label for="q2" class="p-5 block cursor-pointer font-bold flex justify-between">Metode Pembayaran? <span class="text-cyan-400">▼</span></label>
+                <div class="answer text-sm text-slate-400">Menerima Transfer Bank (BSI, BCA), Dana, OVO, dan QRIS.</div>
+            </div>
+            <div class="glass rounded-2xl overflow-hidden">
+                <input type="checkbox" id="q3" class="hidden faq-toggle">
+                <label for="q3" class="p-5 block cursor-pointer font-bold flex justify-between">Berapa lama pengerjaan? <span class="text-cyan-400">▼</span></label>
+                <div class="answer text-sm text-slate-400">Tergantung paket. Express selesai dalam 24 jam, Reguler 5-7 hari.</div>
+            </div>
+            <div class="glass rounded-2xl overflow-hidden">
+                <input type="checkbox" id="q4" class="hidden faq-toggle">
+                <label for="q4" class="p-5 block cursor-pointer font-bold flex justify-between">Apakah ada garansi? <span class="text-cyan-400">▼</span></label>
+                <div class="answer text-sm text-slate-400">Tentu. Kami memberikan garansi ganti unit baru atau perbaikan jika layanan/produk yang diterima bermasalah.</div>
+            </div>
+            <div class="glass rounded-2xl overflow-hidden">
+                <input type="checkbox" id="q5" class="hidden faq-toggle">
+                <label for="q5" class="p-5 block cursor-pointer font-bold flex justify-between">Bagaimana cara klaim lisensi? <span class="text-cyan-400">▼</span></label>
+                <div class="answer text-sm text-slate-400">Setelah status pembayaran berhasil, kode lisensi atau link aset akan muncul di menu Riwayat atau dikirim via WhatsApp Admin.</div>
+            </div>
+        </div>
+        <div class="mt-12 p-8 glass rounded-[40px] text-center">
+            <p class="text-xs text-slate-500 mb-4">Butuh bantuan lain?</p>
+            <a href="https://wa.me/6281234567890" class="bg-green-500 text-white px-8 py-3 rounded-2xl font-bold hover:bg-white hover:text-green-600 transition">WHATSAPP ADMIN</a>
+        </div>
+    </div>
+    <footer class="mt-20 border-t border-white/5 py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+                <div>
+                    <h1 class="text-xl font-bold tracking-tighter mb-4">DIGITAL<span class="text-cyan-400">VAULT</span></h1>
+                    <p class="text-xs text-slate-500 leading-relaxed">Penyedia layanan IT, desain kreatif, dan lisensi digital terpercaya untuk kebutuhan personal maupun bisnis Anda.</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold mb-4 uppercase text-cyan-400">Navigasi</h4>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li><a href="shop.html" class="hover:text-white transition">Store</a></li>
+                        <li><a href="riwayat.html" class="hover:text-white transition">Riwayat Pesanan</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">Tentang Kami</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold mb-4 uppercase text-cyan-400">Kontak</h4>
+                    <p class="text-xs text-slate-400">Email: support@digitalvault.id</p>
+                    <p class="text-xs text-slate-400 mt-2">Jam Operasional: 09:00 - 21:00 WIB</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/5 text-center">
+                <p class="text-[10px] text-slate-600 uppercase tracking-widest">&copy; 2026 DigitalVault. Semua Hak Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
